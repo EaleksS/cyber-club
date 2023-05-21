@@ -1,0 +1,100 @@
+@import "/src/app/styles/variables";
+
+.btn {
+  height: 40px;
+  border: 0;
+
+  background: transparent;
+  cursor: pointer;
+  padding: 0 16px;
+
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+
+  position: relative;
+}
+
+.primary {
+  border: 1.5px solid $primary;
+  transition: all 0.2s ease-in-out;
+  color: #fff;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+
+  &:active {
+    transform: scale(0.95);
+  }
+
+  span {
+    display: block;
+    transition: all 0.2s ease-in-out;
+  }
+
+  @media (min-width: 800px) {
+    &:hover {
+      background-color: rgba($color: $primary, $alpha: 0.6);
+
+      span {
+        transform: translateX(0.3rem);
+      }
+    }
+  }
+}
+
+.social {
+  border: 1px solid rgba($color: $gray, $alpha: 0.2);
+  color: #000;
+  transition: all 0.2s ease-in-out;
+  border-radius: 10px;
+
+  &:active {
+    transform: scale(0.95);
+  }
+
+  img {
+    position: absolute;
+    left: 10px;
+  }
+
+  @media (min-width: 800px) {
+    &:hover {
+      background-color: rgba($color: $gray, $alpha: 0.2);
+    }
+  }
+}
+
+.default {
+  transition: all 0.2s ease-in-out;
+  color: #fff;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  color: $bg-color;
+  text-transform: uppercase;
+  background-color: rgba($color: #fff, $alpha: 1);
+
+  &:active {
+    transform: scale(0.95);
+  }
+
+  span {
+    display: block;
+    transition: all 0.2s ease-in-out;
+  }
+
+  @media (min-width: 800px) {
+    &:hover {
+      background-color: rgba($color: #fff, $alpha: 0.5);
+
+      span {
+        transform: translateX(0.3rem);
+      }
+    }
+  }
+}

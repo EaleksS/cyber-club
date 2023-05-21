@@ -1,0 +1,42 @@
+@import "/src/app/styles/variables";
+
+.stock {
+  margin-top: 6rem;
+  border-top: 1px solid #fff;
+  padding: 5rem 0;
+  position: relative;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 1rem;
+
+  .title {
+    position: absolute;
+    top: -25px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+
+    h3 {
+      text-transform: uppercase;
+      background: $bg-color;
+      padding: 0 1rem;
+    }
+  }
+
+  .item {
+    background: $black-light;
+    height: 10rem;
+    padding: 1rem;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  button {
+    height: calc(50px + 2rem);
+    border-radius: 10px;
+  }
+}

@@ -1,0 +1,27 @@
+@import "/src/app/styles/variables";
+
+.zone {
+  margin-top: 6rem;
+  border-top: 1px solid #fff;
+  padding-top: 5rem;
+  position: relative;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 4.5rem;
+
+  .title {
+    position: absolute;
+    top: -25px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+
+    h3 {
+      text-transform: uppercase;
+      background: $bg-color;
+      padding: 0 1rem;
+    }
+  }
+}

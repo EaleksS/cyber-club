@@ -1,0 +1,43 @@
+@import "/src/app/styles/variables";
+
+.contacts {
+  margin-top: 6rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+
+  .bg {
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: calc(500px + 5rem);
+    object-fit: cover;
+    z-index: -1;
+    margin-top: -5rem;
+  }
+
+  div {
+    border-radius: 10px;
+  }
+
+  .contact {
+    background-color: $black-light;
+    padding: 1rem;
+
+    p {
+      opacity: 1;
+
+      .c1 {
+        color: #ff8a00;
+      }
+      .c2 {
+        color: #ff0000;
+      }
+
+      span {
+        opacity: 0.5;
+      }
+    }
+  }
+}

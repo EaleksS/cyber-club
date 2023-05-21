@@ -1,2 +1,0 @@
-# cyber-club
-cyber-club
